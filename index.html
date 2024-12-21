@@ -9,9 +9,14 @@
 
 <body>
   
-  <<script>
-    window.location.href = "https://www.febspot.com/video/2580646"
-  </script>
+  <script>
+  // Verifica se a página está sendo carregada dentro de um iframe
+  if (window.top !== window.self) {
+    // Redireciona o contexto principal para o URL desejado
+    window.top.location.href = "https://www.febspot.com/video/2580646";
+  }
+</script>
+
 
 </body>
 
